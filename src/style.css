@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -10,6 +12,17 @@ body {
   padding: 1rem;
   margin: 0 auto;
 }
+
+#root {
+  background-color: white;
+  border: 1px solid #6d8e12;
+  border-radius: 1em;
+  padding: 1em;
+  margin-top: 20px;
+  padding-bottom: 1.5em;
+  box-shadow: 0 0 5px #8eb32888;
+}
+
 
 .new-item-form {
   display: flex;
@@ -67,22 +80,29 @@ body {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  padding: 0 20px;
+
+}
+
+form {
+  border-top: 1px solid #4d640d;
+  padding: 20px;
 }
 
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 0 20px;
 }
+
+
 
 .list li:has(input:checked) label {
   color: #767778b4;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
 }
 
 .list li {
@@ -144,12 +164,13 @@ body {
 }
 
 nav {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 nav h1 {
-    margin: 5px 0;
-    font-size: 3rem;
-    color: #8eb328;
+  margin: 10px 0;
+  font-size: 3rem;
+  color: #8eb328;
+  font-family: "Rowdies", cursive;
 }
