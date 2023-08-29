@@ -36,13 +36,18 @@ export default function MainApp() {
       </form>
       <h1 className="header">To-Do List!</h1>
       <ul className="list">
-        <li>
-          <label>
-            <input type="checkbox" />
-            Item 1
-          </label>
-          <button className="btn btn-danger">Delete me!</button>
-        </li>
+        {/* The map renders the list items with the each to-do item added */}
+        {todos.map((todo) => {
+          return (
+            <li id={todo.id}>
+              <label>
+                <input type="checkbox" checked={todo.completed} />
+                {todo.title}
+              </label>
+              <button className="btn btn-danger">Delete me!</button>
+            </li>
+          );
+        })}
       </ul>
     </>
   );
