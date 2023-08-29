@@ -99,7 +99,7 @@ body {
 }
 
 .list li:has(input:focus-visible) label {
-  outline: 1px solid hsl(200, 100%, 50%);
+  outline: 1px solid #5b9f6b84;
 }
 
 .list li input {
@@ -116,7 +116,7 @@ body {
   display: block;
   width: 0.9rem;
   height: 0.9rem;
-  background: hsl(200, 100%, 90%);
+  background: white;
   border-radius: 0.25em;
   display: flex;
   justify-content: center;
@@ -124,17 +124,19 @@ body {
 }
 
 .list li label:hover::before {
-  background: hsl(200, 100%, 80%);
+  background: #5b9f6b84;
 }
 
 .list li:has(input:checked) label::before {
   content: "✔";
-  background: hsl(200, 100%, 40%);
-  color: hsl(200, 100%, 90%);
+  background: #ffffff;
+  color: #295032eb;
+  border: 1px solid #2e5637;
+
   font-size: 0.75rem;
   font-weight: bold;
 }
 
 .list li:has(input:checked) label:hover::before {
-  background: hsl(200, 100%, 30%);
+  background: #5b9f6b84;
 }
