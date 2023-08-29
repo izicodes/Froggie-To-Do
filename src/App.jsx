@@ -24,11 +24,21 @@ export default function MainApp() {
   // Function for when you click the checkbox!
   function toggleToDo(id, completed) {
     setToDos((currentTodo) => {
+      //  map function is used to create a new array based on
+      // the currentTodo array and loops through it
       return currentTodo.map((todo) => {
+        // gets the exact todo we want to change via the id
         if (todo.id === id) {
           return {
-            ...todo, completed
-          }
+            /* 
+              creates a new object that has all the properties 
+              of the current to-do item (todo), but the completed 
+              property is updated to the value of the completed 
+              parameter passed to the function.
+            */
+            ...todo,
+            completed,
+          };
         }
         return todo;
       });
