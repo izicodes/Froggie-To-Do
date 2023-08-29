@@ -17,6 +17,8 @@ export default function MainApp() {
         { id: crypto.randomUUID(), title: newItem, completed: false },
       ];
     });
+
+    setNewItem("");
   }
 
   return (
@@ -27,6 +29,7 @@ export default function MainApp() {
           <input
             value={newItem}
             type="text"
+            // The onChange = change event handler
             onChange={(e) => setNewItem(e.target.value)}
             name="newItem"
             id="newItem"
@@ -39,7 +42,8 @@ export default function MainApp() {
         {/* The map renders the list items with the each to-do item added */}
         {todos.map((todo) => {
           return (
-            <li id={todo.id}>
+            // use key instead of id for the unique identifier
+            <li key={todo.id}>
               <label>
                 <input type="checkbox" checked={todo.completed} />
                 {todo.title}
