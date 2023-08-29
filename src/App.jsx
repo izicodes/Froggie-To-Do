@@ -21,6 +21,20 @@ export default function MainApp() {
     setNewItem("");
   }
 
+  // Function for when you click the checkbox!
+  function toggleToDo(id, completed) {
+    setToDos((currentTodo) => {
+      return currentTodo.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo, completed
+          }
+        }
+        return todo;
+      });
+    });
+  }
+
   return (
     <>
       <form onSubmit={handleSubmit} action="" className="new-item-form">
@@ -45,7 +59,11 @@ export default function MainApp() {
             // use key instead of id for the unique identifier
             <li key={todo.id}>
               <label>
-                <input type="checkbox" checked={todo.completed} />
+                <input
+                  type="checkbox"
+                  checked={todo.completed}
+                  onChange={(e) => toggleToDo(todo.id, e.target.checked)}
+                />
                 {todo.title}
               </label>
               <button className="btn btn-danger">Delete me!</button>

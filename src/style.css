@@ -77,6 +77,7 @@ body {
 
 .list li:has(input:checked) label {
   color: hsl(200, 1%, 58%);
+  text-decoration: line-through;
 }
 
 .list {
