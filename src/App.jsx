@@ -45,6 +45,13 @@ export default function MainApp() {
     });
   }
 
+  // Function that deletes a todo
+  function deleteToDo(id){
+    setToDos(currentTodos => {
+      return currentTodos.filter(todo => todo.id !== id)
+    })
+  }
+
   return (
     <>
       <form onSubmit={handleSubmit} action="" className="new-item-form">
@@ -63,6 +70,7 @@ export default function MainApp() {
       </form>
       <h1 className="header">To-Do List!</h1>
       <ul className="list">
+        {todos.length === 0 && "Haven't added any to-dos!"}
         {/* The map renders the list items with the each to-do item added */}
         {todos.map((todo) => {
           return (
@@ -76,7 +84,7 @@ export default function MainApp() {
                 />
                 {todo.title}
               </label>
-              <button className="btn btn-danger">Delete me!</button>
+              <button onClick={() => deleteToDo(todo.id)} className="btn btn-danger">Delete me!</button>
             </li>
           );
         })}
