@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css";
+import Navbar from "./Navbar";
 
 export default function MainApp() {
   const [newItem, setNewItem] = useState("");
@@ -54,6 +55,7 @@ export default function MainApp() {
 
   return (
     <>
+    <Navbar />
       <form onSubmit={handleSubmit} action="" className="new-item-form">
         <div className="form-row">
           <label htmlFor="newItem">Add New Item:</label>
@@ -81,6 +83,7 @@ export default function MainApp() {
                   type="checkbox"
                   checked={todo.completed}
                   onChange={(e) => toggleToDo(todo.id, e.target.checked)}
+                  autoComplete="nope"
                 />
                 {todo.title}
               </label>

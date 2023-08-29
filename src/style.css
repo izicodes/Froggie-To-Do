@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #efe5e5;
-  color: #2e5637;
+  background: #ffffec;
+  color: #5a7807;
   max-width: 400px;
   padding: 1rem;
   margin: 0 auto;
@@ -24,9 +24,9 @@ body {
 }
 
 .btn {
-  background: #5b9f6b84;
-  border: 1px solid #2e5637;
-  color: #2e5637;
+  background: #8eb32888;
+  border: 1px solid #6d8e12;
+  color: #4d640d;
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
   cursor: pointer;
@@ -35,13 +35,14 @@ body {
 
 .btn:hover,
 .btn:focus-visible {
-  background: #80cb9284;
+  background: #8eb32862;
 }
 
 .btn.btn-danger {
   background: hsl(0, 100%, 40%, 0.1);
   border: 1px solid hsl(0, 100%, 40%);
   color: hsl(0, 100%, 40%);
+  padding: 0.15em 0.5em;
 }
 
 .btn.btn-danger:hover,
@@ -55,7 +56,7 @@ body {
   background: #fffafb;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
-  color: #ec9daf;
+  color: #d87089;
 }
 
 .new-item-form input:focus {
@@ -71,13 +72,11 @@ body {
 .list {
   margin: 0;
   padding: 0;
-  margin-left: 1rem;
   list-style: none;
 }
 
 .list li:has(input:checked) label {
-  color: hsl(200, 1%, 58%);
-  text-decoration: line-through;
+  color: #767778b4;
 }
 
 .list {
@@ -90,6 +89,7 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .list li label {
@@ -100,7 +100,7 @@ body {
 }
 
 .list li:has(input:focus-visible) label {
-  outline: 1px solid #5b9f6b84;
+  outline: 1px solid #8eb32862;
 }
 
 .list li input {
@@ -115,29 +115,41 @@ body {
 .list li label::before {
   content: "";
   display: block;
-  width: 0.9rem;
-  height: 0.9rem;
+  width: 1rem;
+  height: 1rem;
   background: white;
+  border: 1px solid #4d640d;
   border-radius: 0.25em;
   display: flex;
+  margin-right: 5px;
   justify-content: center;
   align-items: center;
 }
 
 .list li label:hover::before {
-  background: #5b9f6b84;
+  background: #8eb32862;
 }
 
 .list li:has(input:checked) label::before {
   content: "✔";
   background: #ffffff;
   color: #295032eb;
-  border: 1px solid #2e5637;
-
+  border: 1px solid #4d640d;
   font-size: 0.75rem;
   font-weight: bold;
 }
 
 .list li:has(input:checked) label:hover::before {
-  background: #5b9f6b84;
+  background: #8eb32862;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+nav h1 {
+    margin: 5px 0;
+    font-size: 3rem;
+    color: #8eb328;
 }
