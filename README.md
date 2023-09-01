@@ -50,6 +50,14 @@ Congratulations, you've contributed to our open-source project! Your code is now
 
 If you have any questions or need assistance at any point, don't hesitate to ask. We're here to help and guide you throughout the contribution process~! 😎👍🏾
 
+## Meet the Contributors 
+
+Thanks for contributing to `The Quiz App`.
+
+<a href="https://github.com/xiacodes/Froggie-To-Do/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=xiacodes/Froggie-To-Do" alt ="Froggie-To-Do Contributors"/>
+</a>
+
 
 
 
