@@ -33,10 +33,8 @@ Thank you for your interest in contributing to our open-source project! Your con
 
 Thanks for contributing to `Froggie To-Do`!.
 
-<a href="https://github.com/xiacodes/Froggie-To-Do/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=xiacodes/Froggie-To-Do" alt ="Froggie-To-Do Contributors"/>
-</a>
-
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
 
 
