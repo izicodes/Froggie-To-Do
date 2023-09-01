@@ -31,12 +31,11 @@ Thank you for your interest in contributing to our open-source project! Your con
 
 ## Meet the Contributors 
 
-Thanks for contributing to `Froggie To-Do`!.
+Thanks for contributing to `Froggie To-Do`!
 
-<!-- readme: contributors -start -->
-<!-- readme: contributors -end -->
-
+[xiacodes](https://github.com/xiacodes) | [yehoki](https://github.com/yehoki) | [VenusTokyo](https://github.com/VenusTokyo) | [tpku](https://github.com/tpku)
 
 
 
-Created with 💚 by [@xiacodes](https://github.com/xiacodes)
+
+Created with 💚
