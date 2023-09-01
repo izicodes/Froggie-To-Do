@@ -52,7 +52,7 @@ If you have any questions or need assistance at any point, don't hesitate to ask
 
 ## Meet the Contributors 
 
-Thanks for contributing to `The Quiz App`.
+Thanks for contributing to `Froggie To-Do`!.
 
 <a href="https://github.com/xiacodes/Froggie-To-Do/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=xiacodes/Froggie-To-Do" alt ="Froggie-To-Do Contributors"/>
