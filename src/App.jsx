@@ -5,8 +5,16 @@ import PageWrapper from "./components/PageWrapper";
 
 export default function MainApp() {
     const [newItem, setNewItem] = useState("");
-    const [todos, setToDos] = useState([]);
+    const [todos, setToDos] = useState(JSON.parse(localStorage.getItem("todos")) || []);
+    // Load todos from local storage when the component mounts
     const [darkMode, setDarkMode] = useState(false);
+
+  
+
+  // Save todos to local storage whenever the todos state changes
+  useEffect(() => {
+      localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
     function toggleDarkMode() {
         const toggleMode = darkMode === false ? true : false;
